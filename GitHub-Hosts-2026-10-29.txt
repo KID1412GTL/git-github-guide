@@ -1,0 +1,60 @@
+# ============================================================
+# GitHub Hosts 配置（快照）
+# 更新时间：2026-10-29
+# 数据来源：GitHub 官方 Meta API + 社区每日同步源（maxiaof/github-hosts、hosts.gitcdn.top）
+# 说明：IP 会变动，本文件为「当下可用」快照。建议用下方工具自动同步，别长期手动维护。
+# 使用方式：把下面 # GitHub Hosts Start ~ End 之间的内容，追加到系统 hosts 文件末尾，
+#          然后刷新 DNS（Windows: ipconfig /flushdns）。
+# 系统 hosts 位置：
+#   Windows: C:\Windows\System32\drivers\etc\hosts
+#   macOS / Linux: /etc/hosts
+# 注意：hosts 只能绕过「DNS 污染 / 解析错误」，解决「打不开 / 图片加载不出」。
+#       如果 IP 本身被网络层阻断或限速，hosts 无能为力，需用代理或换 Gitee。
+# ============================================================
+
+# GitHub Hosts Start
+140.82.112.26 alive.github.com
+140.82.113.26 live.github.com
+185.199.111.215 github.githubassets.com
+140.82.112.22 central.github.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.110.133 camo.githubusercontent.com
+185.199.108.133 github.map.fastly.net
+151.101.1.194 github.global.ssl.fastly.net
+140.82.114.4 gist.github.com
+185.199.111.153 github.io
+172.182.252.133 github.com
+192.0.66.2 github.blog
+172.182.252.137 api.github.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
+185.199.108.133 avatars1.githubusercontent.com
+185.199.110.133 avatars2.githubusercontent.com
+185.199.110.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 avatars.githubusercontent.com
+172.182.252.132 codeload.github.com
+185.199.108.153 githubstatus.com
+140.82.112.18 github.community
+20.99.227.183 github.dev
+140.82.114.22 collector.github.com
+13.107.42.16 pipelines.actions.githubusercontent.com
+185.199.111.133 media.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.110.133 objects.githubusercontent.com
+185.199.108.133 raw.githubusercontents.com
+# GitHub Hosts End
+
+# ============================================================
+# 长期维护建议（任选其一，免得天天手改）：
+# 1) 桌面/命令行自动同步工具：https://hosts.gitcdn.top/
+#    Windows 一键：下载 fetch-github-hosts 客户端，开启自动同步即可。
+# 2) SwitchHosts 软件：添加「远程规则」，URL 填
+#    https://raw.githubusercontent.com/maxiaof/github-hosts/master/hosts
+#    设为每小时自动更新。
+# 3) 一行命令手动拉取（Linux/macOS）：
+#    curl -sL https://hosts.gitcdn.top/hosts.txt | sudo tee -a /etc/hosts
+# ============================================================
